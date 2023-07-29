@@ -1,0 +1,62 @@
+<!-- activity_weather_forecast.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTemperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewHumidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewWeatherCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewWindSpeed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Add a RecyclerView here to display the 5-day weather forecast -->
+    <!-- You can style the RecyclerView items to display the forecast for each day with icons, etc. -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
